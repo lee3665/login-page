@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+  Name: Junguk Lee
+  Date: May 20, 2020
+  Section: CSE 154 AK
+  This is the index.html page for logging-in and posting. It requires the user to
+  login the account in order to enter the next page. In this process, we request
+  and receive information from the server.
+-->
+<head>
+  <meta charset="utf-8">
+  <title>CP4</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to my site!</h1>
+  </header>
+  <main>
+    <section id="main-board">
+      <h2 class="heading">Log in to enter this page<br></h2>
+      <form id="login-info">
+        <div class="form-group">
+          <label for="name">Name: </label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password: </label>
+          <input id="password" name="password" type="text" required>
+        </div>
+      </form>
+      <div id="buttons">
+        <div class="btn-group">
+          <br><button id="login-btn">login</button>
+        </div>
+        <div class="btn-group">
+          <br><button id="signup-btn" type="button">sign-up</button>
+        </div>
+        <div class="btn-group">
+          <br><button id="register-btn" class="hidden" type="button">register</button>
+        </div>
+      </div>
+      <br><button id="cancel-btn" type="button" class="hidden">cancel</button>
+      <p id="requirement" class="message hidden">* You need to fill all the requirements</p>
+      <p id="login-check" class="message hidden">* Your name does not exists.
+        You need to register first
+      </p>
+      <p id="password-not-match" class="message hidden">* your password doesn't match with
+        name
+      </p>
+      <p id="register-check" class="message hidden">* Your name has already existed;</p>
+    </section>
+    <section id="posts-board" class="hidden">
+      <h2 class="heading">Post your new blog!</h2>
+      <form id="posts" action="/posts">
+        <div class="form-group">
+          <label for="title">Title: </label>
+          <input id="title" name="title" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="post">Post: </label>
+          <textarea id="post" name="post" rows="5" cols="70" required>
+            Write something here ...
+          </textarea>
+        </div>
+        <div>
+          <button id="post-btn">Post!</button>
+        </div>
+      </form>
+      <button id="log-out">log out</button>
+      <div id="post-results"></div>
+    </section>
+  </main>
+  <footer>
+    <p>
+      Portions of this page &copy;Junguk Lee.
+      All other attributions cited in page source.
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+/*
+  Name: Junguk Lee
+  Date: May 20, 2020
+  Section: CSE 154 AK
+  This is the styles.css page for the logging-in and posting website.
+  It is used for the better styles on the page.
+*/
+.hidden {
+  display: none;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  color: rgba(73, 73, 73, 0.993);
+}
+
+.heading {
+  color: rgba(37, 37, 37, 0.993);
+}
+
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+section {
+  background-color: rgb(63, 105, 194);
+  box-shadow: 1px 3px rgb(28, 52, 105);
+  width: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+section, .post-div {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#requirement, #login-check, #password-not-match {
+  font-size: 15px;
+  color: red;
+}
+
+.post-div {
+  background-color: rgb(112, 141, 202);
+  width: 90%;
+  border-radius: 2px;
+  border: 2px solid rgb(35, 60, 116);
+}
+
+.form-group {
+  margin: 10px;
+}
